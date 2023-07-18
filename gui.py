@@ -1,6 +1,5 @@
 from breezypythongui import EasyFrame
 
-
 class TaxCodeDemo(EasyFrame):
     def __init__(self):
         EasyFrame.__init__(self, title="Tax Calculator")
@@ -29,6 +28,5 @@ class TaxCodeDemo(EasyFrame):
         tax = (income - numDependents * exemptionAmount) * 0.15
 
         self.taxField.setNumber(tax)
-
 
 TaxCodeDemo().mainloop()
