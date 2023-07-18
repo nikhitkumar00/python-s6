@@ -8,7 +8,7 @@ class SimpleGUI(EasyFrame):
         self.addButton(text="Click Me", row=1, column=0, command=self.on_button_click)
 
     def on_button_click(self):
-        self.text["text"] = "Button clicked!"
+        self.messageBox("HI","Good to see you")
 
 if __name__ == "__main__":
     SimpleGUI().mainloop()
