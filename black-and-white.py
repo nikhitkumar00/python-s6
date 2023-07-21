@@ -1,3 +1,4 @@
+from images import Image
 def blackAndWhite(image):
     blackPixel = (0, 0, 0)
     whitePixel = (255, 255, 255)
@@ -9,7 +10,8 @@ def blackAndWhite(image):
                 image.setPixel(x, y, blackPixel)
             else:
                 image.setPixel(x, y, whitePixel)
-def main(filename = "tiger_S5ie8zaJ.gif"):
+
+def main(filename = "starwar.gif"):
     image = Image(filename)
     print("Close the image window to continue.")
     image.draw()
